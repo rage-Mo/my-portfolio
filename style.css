@@ -2,6 +2,39 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#abc4 {
+   height : 70px;
+}
+
+
+#current-time {
+width:100px;
+border-color: purple;
+border-style : dotted;
+border-width: 2px;
+}
+
+#but {
+width:70px;
+}
+
+
+#bif {
+width:70px;
+}
+
+
+
+#gif {
+width:400px;
+margin-top : 2cm ;
+}
+
+#sir {
+width:180px;
+}
+
+
 /* Navigation Bar */
 
 #home {
@@ -36,6 +69,7 @@ body {
 }
 
 .profile_name {
+
   float: left;
   padding-left: 2cm;
   /* Add the styles here */
@@ -69,6 +103,12 @@ h2 {
   margin-bottom: 0px;
 }
 
+#smh{
+  color:  #663399;
+  font-size:11px;
+  margin-bottom : 0px;
+}
+
 .introduction {
   text-align: justify;
   font-size: 30px;
@@ -80,11 +120,64 @@ h2 {
   position: relative;
 }
 
+#abc5{
+   height : 90px;
+}
+
+#abc3{
+   height : 15px;
+}
+
+#abc{
+   height : 80px;
+ }
+ 
+ 
+#abc4{
+   height : 80px;
+ }
+ 
+ 
+#abc1{
+   height : 300px;
+ }
+ 
+#abc2{
+   height : 390px;
+ }
+ 
+
+#carouselExampleCaptions {
+  width : 400px;
+  height : 400px;
+}
+
+#carouselExampleIndicators {
+  width : 400px;
+  height : 400px;
+}
+
 /* Used in the About Me sections */
 
 .container {
   display: flex;
 }
+
+ th, td {
+  border: 5px solid #69359c;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: black;
+  padding: 15px;
+  color: #69359c;
+  
+}
+
+th {
+  text-align: left;
+}
+
 
 /* About Me */
 
@@ -94,8 +187,8 @@ h2 {
 }
 
 #about-me h1 {
-  font-size: 65px;
-  margin-top: 90px;
+  font-size: 40px;
+  margin-top: 20px;
   color: #7600bc;
 }
 
@@ -209,7 +302,7 @@ h2 {
   padding: 20px;
   margin: 10px;
   border:1px solid gray;
-  font-size: 18px;
+  font-size: 12px;
   height:150px
 }
 
