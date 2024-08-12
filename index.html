@@ -1,147 +1,803 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Jane Doe - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OM</title>
+     <script src="./script.js"></script>
+     <link rel="stylesheet" href="./style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          OM
-          <div class="contact_info">
-            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          okunademohammed@gmail.com
-        </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +23490714170339
+    
+    
+   
+   <nav class="navbar bg-body-tertiary"  >
+  <div class="container-fluid">
+	  <button class="btn btn-outline-danger" id = "but" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">CLick</button>
+    <a class="navbar-brand">OM</a> 
+  
+    
+    <a><a class="nav-link ">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lamp" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M5.04.303A.5.5 0 0 1 5.5 0h5c.2 0 .38.12.46.303l3 7a.5.5 0 0 1-.363.687h-.002q-.225.044-.45.081a33 33 0 0 1-4.645.425V13.5a.5.5 0 1 1-1 0V8.495a33 33 0 0 1-4.645-.425q-.225-.036-.45-.08h-.003a.5.5 0 0 1-.362-.688l3-7ZM3.21 7.116A31 31 0 0 0 8 7.5a31 31 0 0 0 4.791-.384L10.171 1H5.83z"/>
+  <path d="M6.493 12.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.052.075l-.001.004-.004.01V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+</svg>
+		
+		
+		<input type="text" id="current-time" readonly data-testid="currentTimeUTC"></a></a>
+    
+    
+       <a>
+		<div id="current_date">
+    <script>
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById("current_date").innerHTML = new Date().toLocaleDateString('en-US', options);
+    </script>
+</div> 
+    </a>
+    
+    <a>+2349071417033</a>
+    <a>Okunademohammed@gmail.com</a>
+    
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id = "sir">
+      <button class="btn btn-outline-success" type="submit" id = "bif">Search</button>
+    </form>
+  </div>
+</nav>
 
-        </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About Me</a>
-          <a class="topmenu" href="#skills">Skills</a>
-          <a class="topmenu" href="#projects">Projects</a>
-          <a class="topmenu" href="#recommendations">Recommendations</a>
-          <!-- Add the links for Skills, Projects and Recommendation here -->
+<hr>    
+    
+    
+    
 
-        </div>
-      </div>    
-    </nav>
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Resources</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   
+    
+    
+    <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+	<p>
+		<input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+       <label class="btn btn-outline-danger" for="vbtn-radio1"><a href="#about-me">About Me</a></label>
+   </p>
+   
+  
+   
+   <p>
+		<input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+       <label class="btn btn-outline-danger" for="vbtn-radio1"><a class="topmenu" href="#skills">Skills</a></label>
+   </p>
+   
+   <p>
+		<input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+       <label class="btn btn-outline-danger" for="vbtn-radio1"><a class="topmenu" href="#projects">Projects</a></label>
+   </p>
+   
+   <p>
+		<input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+       <label class="btn btn-outline-danger" for="vbtn-radio1"><a class="topmenu" href="#recommendations">Recommendations</a></label>
+   </p>
+    
+    </div>
+    </div>
+  </div> 
+  
+  
+  <div class="jumbotron jumbotron-fluid" id= "abc3">
+  <div class="container">
+    <h1 class="display-4"></h1>
+    <p class="lead"></p>
+  </div>
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <div class="jumbotron" id = "abc2">
+  
+ <section id="about-me" class="container">
+    <div>
+       <img src="aa.jpg" id= "gif" class="profile_image"/>
+    </div>
 
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
-      </div>
 
-      <div>
-          <h1>
-            Hi, I'm Okunade Mohammed! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
-          </h1>
-          <p>
-            I am a full stack developer with 2 years of experience in both application and presentation layers.</br>
+      
+      
+      <div class="card text-bg-dark mb-3" style="max-width: 200rem;">
+  <div class="card-header"><h1>Hi, I'm Okunade Mohammed! <img src="html_finalprojimages/waving-hand.png" width="60px"/></h1></div>
+  <div class="card-body">
+    
+    <p class="card-text"> </br>I am a full stack developer with 2 years of experience in both application and presentation layers.</br>
             I have worked on applications and microservices deployed on IBM Cloud.</br>
             I create applications and UI using Python, JS, HTML and CSS respective frameworks.</br>
             I am familliar with JAVA and C++.</br>
             I am also a Cyber security analyst/ Graphic designer.</br> 
             I comfortable with running cmd/powershell on windows and bash on Linux systems.</br>
-            I also create stunning graphics and Gifs with Adobe.</p>
-        
-          </p>
-      </div>
+            I also create stunning graphics and Gifs with Adobe.</br>
+        </p>
+  </div>
+</div>
+      
+      
+      
+      
+      
+     
+      
     </section>
-              
-    <!-- Skills -->
-    <section id="skills">
+    </div></div>
+    
+    
+    <div class="jumbotron jumbotron-fluid" id = "abc1">
+  <div class="container">
+    <h1 class="display-4"></h1>
+    <p class="lead"></p>
+  </div>
+</div>
+    
+    
+<hr>    
+  
+  
+     <section id="skills">
       <h2>Skills</h2>
       <div style="clear:both;"></div>
 
       <div class="all_skills">
-        <div class="skill">
+        <div class="skill" >
           <img src="html_finalprojimages/html5.png"/>
           <h6>HTML</h6>
-          <p>2 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="html_finalprojimages/js.jpeg"/>
-          <h6>JavaScript</h6>
           <p>3 years experience</p>
         </div>  
 
+        <div class="skill" >
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>2 years experience</p>
+        </div>  
+
         <!-- Add more skills here -->
+        
+         <div class="skill" >
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>Python</h6>
+          <p>3 years experience</p>
+        </div>  
+        
+         <div class="skill" >
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>CSS</h6>
+          <p>3 years experience</p>
+        </div>  
 
-
+         <div class="skill" >
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>Linux/h6>
+          <p>3 years experience</p>
+        </div>  
+        
+         <div class="skill" >
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>C++</h6>
+          <p>2 years experience</p>
+        </div>  
+        
+         <div class="skill" >
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>Powershell</h6>
+          <p>2 years experience</p>
+        </div>  
+                
+       
+        
+        
+        
+     
       </div>
     </section>
+    </br>
+    
+    
+    
           
-    <!-- Projects -->
-    <section class="projects" id="projects">
+ <section class="projects" id="projects">
       <h2>
-        Projects
+		 <div class="jumbotron jumbotron-fluid">
+         <div class="container">
+         <h1 class="display-4">Projects</h1>
       </h2>
       <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>Chatbot</h3>
-            <ul>
-              <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and IBM Watson Assistant</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Sentiment Analyzer</h3>
-            <ul>
-              <li>Developed and deployed a sentiment analyzer for the box reviews section of an eCommerce platform using IBM NLU</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Fashion Website</h3>
-            <ul>
-              <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
-            </ul>
-          </div>
+    <p></p></br></br>
+    
+    
+   <div class="accordion accordion-flush" id="accordionFlushExample">
+ 
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        Budget Allocation App
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+		  <ul>
+			  
+			<li>  
+			  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-text">Developed a budget allocation app UI with react state using the Context API and react components.</p>
+  </div>
+</div>
+			  </li>
+			  
+            
+          </ul>
+          
+        </div>
     </div>
-    </section>
-    <div style="clear:both;"></div>
+ 
+    
+    
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Image Gallery
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+		   <ul>
+			   
+			   
+					  
+			<li>  
+			  <div class="card" style="width: 18rem;">
+  <div class="card-body">
 
+    <p class="card-text">Built an online image gallery with user features using HTML,CSS and JS.</p>
+  </div>
+</div>
+			  </li>   
+			   
+			   
+           
+            </ul>
+            
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Sentiment Analyzer
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+		   <ul>
+			   
+			  		  
+			<li>  
+			  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+  
+    <p class="card-text">Developed a secure website using HTML,JavaScript and integrated a sentiment analyzer using embedded Waston AI Libraries.</p>
+  </div>
+</div>
+			  </li>
+            </ul>
+            
+	
+    </div>
+  </div>
+ 
+ 
+ 
+
+ 
+   <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+        Emotion Detector
+      </button>
+    </h2>
+    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+		  <ul>
+			  
+			<li>  
+			  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-text">Developed a secure website using HTML,JavaScript and integrated an Emotion Detector bot using embedded Waston AI Libraries.</p>
+  </div>
+</div>
+			  </li>
+			  
+            
+          </ul>
+          
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+</div></div>     
+</section>
+
+<div style="clear:both;"></div>
+
+<p></p>
+
+
+
+
+<div class="jumbotron jumbotron-fluid" id ="abc">
+  <div class="container">
+    <h1 class="display-4"></h1>
+    <p class="lead"></p>
+  </div>
+</div>
+
+
+<section class="projects" id="projects">
+     
+    
+   <div class="accordion accordion-flush" id="accordionFlushExample">
+ 
+    
+    
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        User Authentication System
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+		   <ul>
+			   
+			   
+					  
+			<li>  
+			  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-text">Built a secure user authentication program with python and deployed and integrated with a web interface using Flask.</p>
+    
+  </div>
+</div>
+			  </li>   
+			   
+			   
+           
+            </ul>
+            
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        Food Delivery App
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+		   <ul>
+			   
+			  		  
+			<li>  
+			  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-text">Modernized a food delivery service built on top of a monolithic architecture to a Cloud native architecture built on microservices using IBM cloud </p>
+    
+  </div>
+</div>
+			  </li>
+            </ul>
+            
+	
+    </div>
+  </div>
+  
+  
+  
+  
+</div></div>     
+</section>
+
+<div style="clear:both;"></div>
+
+<p></p>
+
+
+
+<div class="jumbotron jumbotron-fluid" id ="abc">
+  <div class="container">
+    <h1 class="display-4"></h1>
+    <p class="lead"></p>
+  </div>
+</div>
+
+
+
+
+
+<div class="jumbotron jumbotron-fluid" id = "abc5">
+  <div class="container">
+    <h1 class="display-4">Specializations</h1>
+  </div>
+</div>
+<hr>
+
+
+
+
+
+<table>
+	<tr>
+		<th>IBM</th>
+		<th>IBM</th>
+		<th>GOOGLE</th>
+	</tr>
+	<tr>
+	<td>
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+         
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./cs/1.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id = "smh">1</h5>
+        <p id="smh">IBM CyberSecurity Analyst.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./cs/2.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id = "smh">2</h5>
+        <p id="smh">IBM CybeSecurity Analyst.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./cs/3.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id = "smh">3</h5>
+        <p id="smh">IBM CyberSecurity Analyst.</p>
+      </div>
+    </div>
+  </div>
+  
+     <div class="carousel-item">
+      <img src="./cs/4.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id = "smh">4</h5>
+        <p id="smh">IBM CybeSecurity Analyst.</p>
+      </div>
+    </div>
+ 
+    <div class="carousel-item">
+      <img src="./cs/5.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id = "smh">5</h5>
+        <p id="smh">IBM CybeSecurity Analyst.</p>
+      </div>
+    </div>
+    
+    
+       <div class="carousel-item">
+      <img src="./cs/6.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id = "smh">6</h5>
+        <p id="smh">IBM CybeSecurity Analyst.</p>
+      </div>
+    </div>
+    
+       <div class="carousel-item">
+      <img src="./cs/7.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id = "smh">7</h5>
+        <p id="smh">IBM CybeSecurity Analyst.</p>
+      </div>
+    </div>
+    
+       <div class="carousel-item">
+      <img src="./cs/8.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 id = "smh">8</h5>
+        <p id="smh">IBM CybeSecurity Analyst.</p>
+      </div>
+    </div>
+    
+  
+  
+  
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div >
+
+
+</td>
+
+
+
+
+	<td>
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+       <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+   
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="./fs/1.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>1</h5>
+        <p>IBM FullStack Software Specialization.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="./fs/2.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>2</h5>
+        <p>IBM FullStack Software Specialization.</p>
+      </div>
+    </div>
+   
+   
+   <div class="carousel-item" data-bs-interval="2000">
+      <img src="./fs/3.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>3</h5>
+        <p>IBM FullStack Software Specialization.</p>
+      </div>
+    </div>
+   
+   
+   <div class="carousel-item" data-bs-interval="2000">
+      <img src="./fs/4.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>4</h5>
+        <p>IBM FullStack Software Specialization.</p>
+      </div>
+    </div>
+   
+   
+   <div class="carousel-item" data-bs-interval="2000">
+      <img src="./fs/5.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>5</h5>
+        <p>IBM FullStack Software Specialization.</p>
+      </div>
+    </div>
+   
+   
+   <div class="carousel-item" data-bs-interval="2000">
+      <img src="./fs/6.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>6</h5>
+        <p>IBM FullStack Software Specialization.</p>
+      </div>
+    </div>
+   
+   
+   <div class="carousel-item" data-bs-interval="2000">
+      <img src="./fs/7.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>7</h5>
+        <p>IBM FullStack Software Specialization.</p>
+      </div>
+    </div>
+   
+   
+   <div class="carousel-item" data-bs-interval="2000">
+      <img src="./fs/8.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>8</h5>
+        <p>IBM FullStack Software Specialization.</p>
+      </div>
+    </div>
+   
+     
+     
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>  
+</td>
+
+	<td>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    
+  </div>
+  
+  <div class="carousel-inner">
+	  
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src="./it/1.png" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+        <h5  id="smh">1</h5>
+        <p  id="smh">Google IT Support.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="1000">
+      <img src="./it/2.png" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+        <h5  id="smh">2</h5>
+        <p  id="smh">Google IT Support.</p>
+      </div>
+    </div>
+    
+     <div class="carousel-item" data-bs-interval="1000">
+      <img src="./it/3.png" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+        <h5  id="smh">3</h5>
+        <p  id="smh">Google IT Support.</p>
+      </div>
+    </div>
+    
+     <div class="carousel-item" data-bs-interval="1000">
+      <img src="./it/4.png" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+        <h5  id="smh">4</h5>
+        <p  id="smh">Google IT Support.</p>
+      </div>
+    </div>
+    
+     <div class="carousel-item" data-bs-interval="1000">
+      <img src="./it/5.png" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+        <h5  id="smh">5</h5>
+        <p  id="smh">Google IT Support.</p>
+      </div>
+    </div>
+    
+     <div class="carousel-item" data-bs-interval="1000">
+      <img src="./it/6.png" class="d-block w-100" alt="...">
+       <div class="carousel-caption d-none d-md-block">
+        <h5  id="smh">6</h5>
+        <p  id="smh">Google IT Support.</p>
+      </div>
+    </div>
+    
+    
+    
+   
+    
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</td>
+
+
+
+
+
+
+
+
+</tr>
+</table>
+	 
+
+
+<div class="jumbotron jumbotron-fluid" id= "abc4">
+  <div class="container">
+  </div>
+</div>
+
+
+
+ 
+ <div class = "containner">
     <!-- Recommendations -->
     <section id="recommendations">
-      <h2>Recommendations</h2>
+      </br><h2>Recommendations</h2>
       <div style="clear:both;"></div>
       <div class="all_recommendations" id="all_recommendations">
         <div class="recommendation">
           <span>&#8220;</span>
-          Jane is a very quick learner and quickly grasps key concepts of Web development. 
-          She got a great attitude & she is an excellent team player. 
-          She has a curious mind and asks the right question. 
-          She takes initiative within a team and has potentials to lead the team.
+          Mohammed is a very quick learner and quickly grasps key concepts of Web development. 
+          He has a great attitude & he is an excellent team player. 
+          He has a curious mind and asks the right question. 
+          He takes initiative within a team and has potentials to lead the team.
           <span>&#8221;</span>
         </div>
         <div class="recommendation">
           <span>&#8220;</span>
-          Working with Jane has been an awesome experience. 
-          She is highly knowledgable and always goes the extra step to make sure everything is right. 
-          For any future projects that need her expertise I would definitely want to work with her again.
+          Working with Mohammed has been an awesome experience. 
+          He is highly knowledgable and always goes the extra step to make sure everything is right. 
+          For any future projects that need his expertise I would definitely want to work with him again.
           <span>&#8221;</span>
         </div>
         <div class="recommendation">
           <span>&#8220;</span>
-          I had worked along with Jane during the initial phase of our venture which needed Web development. 
-          She is a committed resource who has in depth knowledge about the domain. 
-          She will be an asset for any organisation! 
+          I had worked along with Mohammed during the initial phase of our venture which needed Web development. 
+          He is a committed resource who has in depth knowledge about the domain. 
+          He will be an asset for any organisation! 
           <span>&#8221;</span>
         </div>
       </div>
     </section>
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
     <!-- Recommendation Form -->
     <section id="contact">
       <div class="flex_center">
@@ -170,5 +826,30 @@
       <h3><!-- Add appropriate text here-->Thanks for leaving a recomendation</h3>
       <button onclick="showPopup(false)">Ok</button>
     </div>
+  
+  
+  
+  
+  
+  
+  
+  <div>
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+   
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
+  
 </html>
